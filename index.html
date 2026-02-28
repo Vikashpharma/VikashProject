@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaishanvi Pharma | Trusted Healthcare</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+
+/* GENERAL */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* PREMIUM GRADIENT NAVBAR */
+.navbar{
+    background: linear-gradient(90deg,#0d6efd,#0dcaf0);
+}
+
+/* HERO SECTION */
+.hero{
+    background: linear-gradient(135deg,#1a61c9d4,#0dcaf0);
+    color:white;
+    padding:120px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Offer Badge Styling */
+.offer-badge{
+    display:inline-block;
+    background:linear-gradient(90deg,#ffffff,#cfe9ff);
+    color:#0d6efd;
+    padding:10px 20px;
+    border-radius:50px;
+    font-weight:600;
+    font-size:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    animation: pulseOffer 2s infinite;
+}
+
+/* Soft Pulse Animation */
+@keyframes pulseOffer{
+    0%{ transform:scale(1); }
+    50%{ transform:scale(1.05); }
+    100%{ transform:scale(1); }
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-15px);}
+    100% { transform: translateY(0px);}
+}
+
+.hero-img{
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Section Title */
+.section-title{
+    font-weight:700;
+    color:#0d6efd;
+}
+
+/* MODERN CARDS */
+.card{
+    border:none;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* SERVICE ICON STYLE */
+.service-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+/* LOCATION SECTION */
+.location{
+    background:#f8f9fa;
+}
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#0d6efd,#0dcaf0);
+    color:white;
+}
+
+/* WHATSAPP FLOAT BUTTON */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:22px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:1000;
+    transition:0.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* FADE IN ANIMATION */
+.fade-in{
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+footer h5{
+    color:#ffffff;
+    letter-spacing:1px;
+}
+
+footer p{
+    color:#eaf4ff;
+    font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Vaishanvi Pharma</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#medicines">Medicines</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero text-center text-lg-start" id="home">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-lg-6 fade-in">
+
+<!-- Offer Badge -->
+<div class="offer-badge mb-3">
+🔥 Flat 10% OFF on All Medicines
+</div>
+
+<h1 class="display-4 fw-bold">
+Your Trusted Healthcare Partner
+</h1>
+
+<p class="lead mt-3">
+We provide quality medicines, expert doctor consultation, home delivery services 
+and reliable pathology solutions for complete healthcare support.
+</p>
+
+<a href="#services" class="btn btn-light btn-lg me-3">Explore Services</a>
+<a href="#location" class="btn btn-outline-light btn-lg">Contact Us</a>
+
+</div>
+
+<div class="col-lg-6 text-center mt-5 mt-lg-0">
+<img src="https://fermanaghclinics.com/wp-content/uploads/2023/08/10.jpg"
+class="img-fluid rounded-4 shadow hero-img">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- MEDICINES SECTION -->
+<section class="py-5" id="medicines">
+<div class="container">
+<h2 class="text-center section-title mb-5">Medicine Types Available</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<i class="bi bi-capsule-pill service-icon text-primary"></i>
+<h5>Tablets & Capsules</h5>
+<p>All general and prescription medicines available.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<i class="bi bi-droplet-half service-icon text-info"></i>
+<h5>Syrups</h5>
+<p>Effective syrups for cough, fever and cold.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<i class="bi bi-heart-pulse service-icon text-danger"></i>
+<h5>Injections</h5>
+<p>Safe and certified injectable medicines.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<i class="bi bi-capslock service-icon text-success"></i>
+<h5>Health Supplements</h5>
+<p>Vitamins and immunity boosters.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<i class="bi bi-bag-heart service-icon text-warning"></i>
+<h5>Personal Care</h5>
+<p>Hygiene and wellness products.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center">
+<i class="bi bi-hospital service-icon text-secondary"></i>
+<h5>Medical Equipment</h5>
+<p>BP monitors, glucose meters and more.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="py-5 bg-light" id="services">
+<div class="container">
+<h2 class="text-center section-title mb-5">Our Services</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-person-check service-icon text-primary"></i>
+<h5>Doctor Consultation</h5>
+<p>Professional medical advice from experts.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-truck service-icon text-success"></i>
+<h5>Home Delivery</h5>
+<p>Fast and secure medicine delivery.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-house-heart service-icon text-danger"></i>
+<h5>Home Care Services</h5>
+<p>Care support for ongoing health issues.</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-4 text-center">
+<i class="bi bi-clipboard2-pulse service-icon text-info"></i>
+<h5>Pathology Services</h5>
+<p>Accurate lab testing & diagnostics.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="py-5 location" id="location">
+<div class="container text-center">
+<h2 class="section-title mb-4">Shop Location & Address</h2>
+
+<p><strong>Address:</strong> 123 Health Street, Medical Colony, Your City</p>
+<p><strong>Phone:</strong> +91 98765 43210</p>
+<p><strong>Email:</strong> contact@vaishanvipharma.com</p>
+<p><strong>Business Hours:</strong> Mon - Sun | 8 AM - 10 PM</p>
+
+<iframe class="rounded-4 shadow mt-4"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086541192889!2d-122.41941518468119!3d37.774929779759134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5e9e6baf%3A0xf4e3c3a1b0e0f8b1!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1616178792345"
+width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="text-center py-5">
+
+<div class="container">
+
+<!-- Owner Details -->
+<div class="mb-4">
+<h5 class="fw-bold">Owner & Healthcare Professional</h5>
+<p class="mb-1">
+<strong>Nursing Experience:</strong> 2+ Years
+</p>
+<p class="mb-1">
+<strong>Associated With:</strong> AIIMS Patna (All India Institute of Medical Sciences, Patna)
+</p>
+</div>
+
+<hr style="background:white; opacity:0.3;">
+
+<p class="mt-3 mb-2">© 2026 Vaishanvi Pharma. All rights reserved.</p>
+
+<p>
+<i class="bi bi-facebook m-2"></i>
+<i class="bi bi-instagram m-2"></i>
+<i class="bi bi-whatsapp m-2"></i>
+</p>
+
+</div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919876543210" class="whatsapp">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
